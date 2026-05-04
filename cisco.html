@@ -89,17 +89,23 @@
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                Accordion Item #2
+                                DHCP
                             </button>
                         </h2>
                         <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <strong>This is the second item’s accordion body.</strong> It is hidden by default,
-                                until the collapse plugin adds the appropriate classes that we use to style each
-                                element. These classes control the overall appearance, as well as the showing and hiding
-                                via CSS transitions. You can modify any of this with custom CSS or overriding our
-                                default variables. It’s also worth noting that just about any HTML can go within the
-                                <code>.accordion-body</code>, though the transition does limit overflow.
+                                <ol>
+                                    <li>R1(config)# service dhcp </li>
+                                    <li>R1# configure terminal</li>
+                                    <li>R1(config)# ip dhcp excluded-address 192.168.1.1 192.168.1.10 (x.1 to x.10 is the range)</li>
+                                    <li>R1(config)# ip dhcp pool LAN_POOL</li>
+                                    <li>R1(config-dhcp)# network 192.168.1.0 255.255.255.128</li>
+                                    <li>R1(config-dhcp)# default-router 192.168.1.126</li>
+                                    <li>R1(config-dhcp)# dns-server 8.8.4.4</li>
+                                    <li>R1(config-dhcp)# exit</li>
+                                    <li>R1(config)# exit</li>
+                                    <li>copy running-config startup-config</li>
+                                </ol>
                             </div>
                         </div>
                     </div>
