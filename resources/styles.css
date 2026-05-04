@@ -1,6 +1,7 @@
 body{
-    background-color: rgba(34, 34, 34, 0.965);
+    background-image: repeating-linear-gradient(rgb(0, 0, 0),rgb(39, 42, 42));
 }
+
 
 h1{
     color: rgb(127, 255, 200);
@@ -10,9 +11,11 @@ p{
 }
 
 .box{
-    background-color: beige;
+    background-image: linear-gradient(rgb(19, 73, 17),rgb(67, 153, 24));
     border-radius: 10px;
     margin: 10px 30px;
+    width: 900px;
+    padding: 10px;
 
 }
 
@@ -27,15 +30,16 @@ p{
 
 .info-btn-blue{
     color: rgba(255, 255, 255, 0.835);
-    background-color: rgb(8, 116, 198);
+    background-image: linear-gradient(blue,rgb(0, 238, 255));
     border-radius: 15px;
     text-align: center;
     margin: 5px;
 }
 
+
+
 .info-btn-gray{
-    color: rgb(255, 250, 250);
-    background-color: rgb(77, 77, 77);
+    background-color: rgb(66, 66, 66);
     border-radius: 15px;
     text-align: center;
     margin: 5px;
@@ -43,7 +47,7 @@ p{
 
 .info-btn-green{
     color: rgba(255, 255, 255, 0.835);
-    background-color: rgb(8, 198, 78);
+    background-image: linear-gradient(rgb(24, 73, 27),rgb(60, 255, 0));
     border-radius: 15px;
     text-align: center;
     margin: 5px;
@@ -51,7 +55,7 @@ p{
 
 .info-btn-red{
     color: rgba(255, 255, 255, 0.835);
-    background-color: rgb(198, 8, 8);
+    background-image: linear-gradient(rgb(91, 34, 34),rgb(254, 82, 82));
     border-radius: 15px;
     text-align: center;
     margin: 5px;
@@ -82,4 +86,14 @@ p{
   height: 100%;
   object-fit: cover;
   object-position: center;
+}
+
+.maxw{
+    max-height: 120px;
+    padding-left: 60px;
+    text-align: left;
+}
+
+header{
+    font-weight: bold;
 }
