@@ -1,17 +1,38 @@
-body{
-    background-image: linear-gradient(rgb(0, 0, 0),rgb(39, 42, 42));
+html,
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+/*  */
+
+/*  */
+
+
+
+body {
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(39, 42, 42));
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 
-h1{
+.container {
+    min-height: 100vh;
+}
+
+h1 {
     color: rgb(58, 177, 47);
 }
-p{
+
+p {
     color: rgb(255, 250, 250);
 }
 
-.box{
-    background-image: linear-gradient(rgb(19, 73, 17),rgb(67, 153, 24));
+.box {
+    background-image: linear-gradient(rgb(19, 73, 17), rgb(67, 153, 24));
     border-radius: 10px;
     margin: 10px 30px;
     width: 900px;
@@ -19,18 +40,18 @@ p{
 
 }
 
-.text{
+.text {
     color: rgba(24, 23, 23, 0.835);
     height: 100vh;
 }
 
-.header-text{
+.header-text {
     color: rgba(24, 23, 23, 0.835);
 }
 
-.info-btn-blue{
+.info-btn-blue {
     color: rgba(255, 255, 255, 0.835);
-    background-image: linear-gradient(blue,rgb(0, 238, 255));
+    background-image: linear-gradient(blue, rgb(0, 238, 255));
     border-radius: 15px;
     text-align: center;
     margin: 5px;
@@ -38,62 +59,62 @@ p{
 
 
 
-.info-btn-gray{
+.info-btn-gray {
     background-color: rgb(66, 66, 66);
     border-radius: 15px;
     text-align: center;
     margin: 5px;
 }
 
-.info-btn-green{
+.info-btn-green {
     color: rgba(255, 255, 255, 0.835);
-    background-image: linear-gradient(rgb(24, 73, 27),rgb(60, 255, 0));
+    background-image: linear-gradient(rgb(24, 73, 27), rgb(60, 255, 0));
     border-radius: 15px;
     text-align: center;
     margin: 5px;
 }
 
-.info-btn-red{
+.info-btn-red {
     color: rgba(255, 255, 255, 0.835);
-    background-image: linear-gradient(rgb(91, 34, 34),rgb(254, 82, 82));
+    background-image: linear-gradient(rgb(91, 34, 34), rgb(254, 82, 82));
     border-radius: 15px;
     text-align: center;
     margin: 5px;
 }
 
-.text-dark{
+.text-dark {
     color: rgba(24, 23, 23, 0.835);
 }
 
 .carousel-wrapper {
-  max-width: 800px;
-  width: 100%;
-  margin: 0 auto;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .carousel-inner {
-  height: 600px;
-  border-radius: 12px;
-  overflow: hidden;
+    height: 600px;
+    border-radius: 12px;
+    overflow: hidden;
 }
 
 .carousel-item {
-  height: 600px;
+    height: 600px;
 }
 
 .carousel-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
-.maxw{
+.maxw {
     max-height: 120px;
     padding-left: 60px;
     text-align: left;
 }
 
-header{
+header {
     font-weight: bold;
 }
