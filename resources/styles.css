@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
+
 }
 
 /*  */
@@ -125,4 +126,14 @@ p {
 
 header {
     font-weight: bold;
+}
+
+.footer-glass {
+    max-height: 60px;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    background: rgba(20, 20, 20, 0.5);
+    border-top: 1px solid rgba(200, 200, 200, 0.2);
+    padding-top: 20px;
+    padding-left: 30px;
 }
