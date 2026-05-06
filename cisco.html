@@ -25,7 +25,7 @@
                     <h1 class="m-0 fs-3 fs-md-1 header-text">
                         Learn IT
                     </h1>
-                    <p class="text-dark">Cisco</p>
+                    <p class="text-dark">Cisco for intermediate</p>
                 </div>
                 <div
                     class="col-6 text-end text-md-start d-flex justify-content-end justify-content-md-start align-items-center">
@@ -100,15 +100,15 @@
                         <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <ol>
-                                    <li>R1(config)# service dhcp </li>
-                                    <li>R1# configure terminal</li>
-                                    <li>R1(config)# ip dhcp excluded-address 192.168.1.1 192.168.1.10 (x.1 to x.10 is the range)</li>
-                                    <li>R1(config)# ip dhcp pool LAN_POOL</li>
-                                    <li>R1(config-dhcp)# network 192.168.1.0 255.255.255.128</li>
-                                    <li>R1(config-dhcp)# default-router 192.168.1.126</li>
-                                    <li>R1(config-dhcp)# dns-server 8.8.4.4</li>
-                                    <li>R1(config-dhcp)# exit</li>
-                                    <li>R1(config)# exit</li>
+                                    <li>service dhcp </li>
+                                    <li>configure terminal</li>
+                                    <li>ip dhcp excluded-address (staring ipv4 range) (ending ipv4 range)</li>
+                                    <li>ip dhcp pool (The pool's name)</li>
+                                    <li>network (The device's own network adress for example 192.168.1.0) (The network's subnetmask)</li>
+                                    <li>default-router (router's ip address)</li>
+                                    <li>dns-server (DNS server's ip address)</li>
+                                    <li>exit</li>
+                                    <li>exit</li>
                                     <li>copy running-config startup-config</li>
                                 </ol>
                             </div>
@@ -118,17 +118,47 @@
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                Accordion Item #3
+                                Switch: setup Vlan
                             </button>
                         </h2>
                         <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <strong>This is the third item’s accordion body.</strong> It is hidden by default, until
-                                the collapse plugin adds the appropriate classes that we use to style each element.
-                                These classes control the overall appearance, as well as the showing and hiding via CSS
-                                transitions. You can modify any of this with custom CSS or overriding our default
-                                variables. It’s also worth noting that just about any HTML can go within the
-                                <code>.accordion-body</code>, though the transition does limit overflow.
+                                <ol>
+                                    <li>enable</li>
+                                    <li>configure terminal</li>
+                                    <li>interface Vlan1</li>
+                                    <li>ip address (ip address) (subnetmask)</li>
+                                    <li>no shutdown</li>
+                                    <li>exit</li>
+                                    <li>ip default-gateway (router's ipv4 address)</li>
+                                    <li>copy running-config startup-config<li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Switch: setup SSH
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ol>
+                                    <li>enable</li>
+                                    <li>configure terminal</li>
+                                    <li>ip domain-name (domain.name)</li>
+                                    <li>username (username) privilege 15 secret (password)</li>
+                                    <li>crypto key generate rsa</li>
+                                    <li>1024</li>
+                                    <li>ip ssh version 2</li>
+                                    <li>line vty 0 4</li>
+                                    <li>login local</li>
+                                    <li>transport input ssh</li>
+                                    <li>exit</li>
+                                    <li>copy running-config startup-config<li>
+                                </ol>
                             </div>
                         </div>
                     </div>
