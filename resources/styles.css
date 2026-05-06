@@ -74,6 +74,14 @@ p {
     margin: 5px;
 }
 
+.info-btn-yellow {
+    color: rgba(255, 255, 255, 0.835);
+    background-image: linear-gradient(rgb(255, 255, 0), rgb(255, 165, 0));
+    border-radius: 15px;
+    text-align: center;
+    margin: 5px;
+}
+
 .info-btn-red {
     color: rgba(255, 255, 255, 0.835);
     background-image: linear-gradient(rgb(91, 34, 34), rgb(254, 82, 82));

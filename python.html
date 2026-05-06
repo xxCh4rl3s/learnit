@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./resources/styles.css">
+    <link rel="icon" type="image/x-icon" href="./resources/icon.png">
+    <title>Learn IT - python</title>
+</head>
+
+<body>
+    <header class="box maxw">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-6">
+                    <img src="./resources/icon.png" alt="Learn IT logo" width="40" height="40">
+                    <h1 class="m-0 fs-3 fs-md-1 header-text">
+                        Learn IT
+                    </h1>
+                    <p class="text-dark">home</p>
+                </div>
+                <div
+                    class="col-6 text-end text-md-start d-flex justify-content-end justify-content-md-start align-items-center">
+                    <nav class="navbar navbar-expand-md">
+                        <div class="container-fluid">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link info-btn-red" aria-current="page" href="./index.html">Home
+                                            page</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link info-btn-blue" href="./html.html">HTML</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link info-btn-green" href="./cisco.html">Cisco Packet Tracer</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link disabled info-btn-gray" aria-current="page" href="#">This
+                                            page</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </header>
+    <div class="container my-5" data-bs-theme="dark">
+        <!-- Title Section -->
+        <div class="text-center mb-5 border-bottom border-secondary pb-4">
+            <h1 class="display-4 fw-bold text-info">Python Basics</h1>
+            <p class="lead text-light-50">Core concepts for Software Developers</p>
+        </div>
+
+        <div class="row g-4">
+            <!-- 1. Introduction & Setup -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-secondary bg-dark shadow">
+                    <div class="card-body">
+                        <h5 class="card-title text-info mb-3">1. Introduction</h5>
+                        <ul class="list-unstyled text-light small">
+                            <li><strong>Python:</strong> High-level, general-purpose language.</li>
+                            <li><strong>Setup:</strong> Use <code>python --version</code> to verify install.
+                            </li>
+                            <li><strong>IDE:</strong> Visual Studio Code is recommended.</li>
+                            <li><strong>Hello World:</strong> <code>print("Hello, World!")</code>.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. Syntax & Variables -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-secondary bg-dark shadow">
+                    <div class="card-body">
+                        <h5 class="card-title text-warning mb-3">2. Syntax & Variables</h5>
+                        <ul class="list-unstyled text-light small">
+                            <li><strong>Comments:</strong> Use <code>#</code> for single-line.</li>
+                            <li><strong>Variable Styles:</strong> <code>camelCase</code>, <code>PascalCase</code>,
+                                <code>snake_case</code>.</li>
+                            <li><strong>Input:</strong> <code>name = input("Who are you?")</code>.</li>
+                            <li><strong>F-Strings:</strong> <code>print(f"Hi {name}!")</code>.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. Data Types -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-secondary bg-dark shadow">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary mb-3" style="color: #a29bfe;">3. Data Types</h5>
+                        <div class="table-responsive">
+                            <table class="table table-sm table-dark table-borderless small">
+                                <tbody>
+                                    <tr>
+                                        <td><code>int / float</code></td>
+                                        <td>Numbers</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>bool</code></td>
+                                        <td>True / False</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>list</code></td>
+                                        <td>Mutable collection</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>tuple</code></td>
+                                        <td>Immutable list</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>dict</code></td>
+                                        <td>Key-value pairs</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. Control Structures -->
+            <div class="col-md-6">
+                <div class="card border-secondary bg-dark shadow">
+                    <div class="card-body">
+                        <h5 class="card-title text-success mb-3 text-uppercase small fw-bold">4. Control Structures</h5>
+                        <div class="row">
+                            <div class="col-6 border-end border-secondary">
+                                <h6 class="small text-secondary">Selection</h6>
+                                <code class="d-block small">if / elif / else</code>
+                                <code class="d-block small mt-1">x if condition else y</code>
+                            </div>
+                            <div class="col-6 ps-3">
+                                <h6 class="small text-secondary">Iteration</h6>
+                                <code class="d-block small">for item in list:</code>
+                                <code class="d-block small mt-1">while condition:</code>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5. Advanced Topics -->
+            <div class="col-md-6">
+                <div class="card border-secondary bg-dark shadow">
+                    <div class="card-body">
+                        <h5 class="card-title text-danger mb-3 text-uppercase small fw-bold">5. Advanced Topics</h5>
+                        <div class="row small">
+                            <div class="col-6">
+                                <p class="mb-1"><strong>Functions:</strong> defined with <code>def</code>.</p>
+                                <p class="mb-0"><strong>OOP:</strong> <code>class</code>, <code>init</code>,
+                                    inheritance.</p>
+                            </div>
+                            <div class="col-6 border-start border-secondary">
+                                <p class="mb-1"><strong>Files:</strong> Use <code>with open()</code>.</p>
+                                <p class="mb-0"><strong>Errors:</strong> <code>try / except / finally</code>.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Summary Table -->
+            <div class="col-12 mt-4">
+                <div class="p-4 bg-dark border border-secondary rounded shadow-sm">
+                    <h5 class="text-info mb-3">Operator Quick-Ref</h5>
+                    <div class="d-flex flex-wrap gap-2 text-light small">
+                        <span class="badge bg-secondary">Arithmetic: +, -, *, /, //, %, **</span>
+                        <span class="badge bg-secondary">Logical: and, or, not</span>
+                        <span class="badge bg-secondary">Comparison: ==, !=, <,>, <=,>=</span>
+                        <span class="badge bg-secondary">Membership: in, not in</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <footer></footer>
+</body>
+
+</html>
