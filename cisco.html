@@ -213,6 +213,65 @@
                             </div>
                         </div>
                     </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                Router: enable secret
+                            </button>
+                        </h2>
+                        <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ol>
+                                    <li>enable</li>
+                                    <li>configure terminal</li>
+                                    <li>enable secret (password)</li>
+                                    <li>exit</li>
+                                    <li>copy running-config startup-config</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                Router: console password
+                            </button>
+                        </h2>
+                        <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ol>
+                                    <li>enable</li>
+                                    <li>configure terminal</li>
+                                    <li>line console 0</li>
+                                    <li>password (password)</li>
+                                    <li>login</li>
+                                    <li>exit</li>
+                                    <li>copy running-config startup-config</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                Router: Banner motd
+                            </button>
+                        </h2>
+                        <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ol>
+                                    <li>enable</li>
+                                    <li>configure terminal</li>
+                                    <li>banner motd (Your text)</li>
+                                    <li>exit</li>
+                                    <li>copy running-config startup-config</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="row mt-5">
